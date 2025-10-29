@@ -13,8 +13,14 @@ def above(ls,x):
             count += 1
     return count/len(ls)
 def median(ls):
-    med = statistics.median(ls)
-    return med
+    l = len(ls)
+    if l % 2 == 0:
+        mr = ls[l//2]
+        ml = ls[mr-1]
+        median = (mr-ml)/2
+    else:
+        median = ls[l//2]
+    return median
 fhand = open('StudentExercise.csv')
 hrs= []
 for line in fhand:
