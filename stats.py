@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import statistics
 def average(ls):
     count = len(ls)
     total = 0 
